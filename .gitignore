@@ -1,0 +1,82 @@
+# =========================
+# Python general
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# =========================
+# Jupyter / Colab
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+
+(Optional: keep notebooks if you want)
+!notebooks/*.ipynb
+
+# =========================
+# Data files (IMPORTANT)
+# =========================
+data/*
+!data/.gitkeep
+
+# If you include small sample data, allow it:
+# !data/sample.csv
+
+# =========================
+# Model files (IMPORTANT)
+# =========================
+model/*
+!model/.gitkeep
+
+# HuggingFace large files
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# =========================
+# Logs / training outputs
+# =========================
+logs/
+results/
+runs/
+wandb/
+
+# =========================
+# Cache / temp
+# =========================
+.cache/
+*.log
+
+# =========================
+# OS-specific
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Streamlit cache
+# =========================
+.streamlit/
+
+# =========================
+# Kaggle / API keys (SECURITY)
+# =========================
+kaggle.json
+
+# =========================
+# Environment variables
+# =========================
+.env
