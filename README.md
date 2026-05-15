@@ -50,6 +50,9 @@ model/
 - streamlit
 
 ## Code structure
-- src/train.py → trains DistilBERT
-- src/baseline.py → TF-IDF baseline
-- app.py → UI demo
+- src/data.py → data loading and preprocessing
+- src/prepare_data.py → dataset preparation
+- src/train.py → trains DistilBERT model
+- src/baseline.py → TF-IDF baseline model
+- src/predict.py → inference logic
+- app.py → Streamlit UI
