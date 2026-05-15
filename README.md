@@ -1,15 +1,38 @@
 # Fake News Detection
 
+## Project Description
+
+This project builds a machine learning system to classify news articles as **real or fake**.
+
+Two approaches are implemented:
+- **Baseline model:** TF-IDF + Logistic Regression  
+- **Advanced model:** DistilBERT (Transformer-based NLP model)
+
+The goal is to compare traditional NLP methods with modern deep learning approaches.
+
+---
+
 ## How to run
 
 1. Install dependencies:
 pip install -r requirements.txt
 
-2. Train model:
+2. Prepare data:
+python src/prepare_data.py
+
+3. Train model:
 python src/train.py
 
-3. Run demo:
+4. Run demo:
 streamlit run app.py
+
+## Dataset
+This project uses the Kaggle Fake News dataset:
+https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+
+You can either:
+- Run prepare_data.py to automatically process the dataset
+- OR manually download and place files in data/
 
 ## Pretrained Model
 
